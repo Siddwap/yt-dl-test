@@ -1,0 +1,11 @@
+uwsgi
+
+flask
+
+youtube_dl
+
+requests
+
+gunicorn
+
+urllib3
