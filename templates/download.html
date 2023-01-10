@@ -1,0 +1,36 @@
+<!-- download.html -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Download Options</title>
+
+</head>
+
+<body>
+
+    <h1>Download Options</h1>
+
+    <p>Available formats for <a href="{{ url }}" target="_blank">{{ url }}</a>:</p>
+
+    <ul>
+
+    {% for format in formats %}
+
+        <li>
+
+            <a href="{{ format.url }}" download>{{ format.ext }} - {{ format.height }}p - {{ format.filesize }}</a>
+
+        </li>
+
+    {% endfor %}
+
+    </ul>
+
+</body>
+
+</html>
+
