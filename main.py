@@ -30,9 +30,9 @@ def download():
 
         formats = info.get("formats", [])
         
-        filesize = formats.filesize
+      
 
-    return render_template("download.html", formats=formats, url=url, filesize=filesize)
+    return render_template("download.html", formats=formats, url=url)
 
 if __name__ == "__main__":
 
