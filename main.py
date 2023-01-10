@@ -29,8 +29,10 @@ def download():
         info = ydl.extract_info(url, download=False)
 
         formats = info.get("formats", [])
+        
+        filesize = formats.filesize/(1024*1024):.2f
 
-    return render_template("download.html", formats=formats, url=url)
+    return render_template("download.html", formats=formats, url=url, filesize=filesize)
 
 if __name__ == "__main__":
 
