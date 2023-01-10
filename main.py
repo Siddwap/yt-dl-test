@@ -30,7 +30,7 @@ def download():
 
         formats = info.get("formats", [])
         
-        filesize = formats.filesize/(1024*1024):.2f
+        filesize = formats.filesize
 
     return render_template("download.html", formats=formats, url=url, filesize=filesize)
 
